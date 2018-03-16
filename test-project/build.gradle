@@ -1,7 +1,15 @@
+buildscript {
+  repositories {
+  }
+  dependencies {
+    classpath 'com.equeo.gradle.plugins:gradle-plugins:1.0-SNAPSHOT'
+  }
+}
+
 plugins {
   id 'groovy'
-  id 'com.equeo.gradle.sample'
 }
+apply plugin: 'com.equeo.gradle.plugins'
 
 repositories {
   mavenCentral()
