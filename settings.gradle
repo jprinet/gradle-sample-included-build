@@ -1,0 +1,11 @@
+pluginManagement {
+  includeBuild 'gradle-plugins'
+}
+
+plugins {
+  id "com.sample.plugins"
+}
+
+rootProject.name = 'test-project'
+include 'app'
+
