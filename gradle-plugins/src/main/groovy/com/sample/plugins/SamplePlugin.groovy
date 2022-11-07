@@ -14,10 +14,11 @@ class SamplePlugin implements Plugin<Settings> {
 
   @Override
   void apply(Settings settings) {
+    settings.getPluginManager().apply(io.invertase.gradle.settings.SettingsPlugin.class)
+//    settings.getPluginManager().apply(com.github.jengelman.gradle.plugins.shadow.PluginShadowPlugin.class)
+    settings.getPluginManager().apply(CommonCustomUserDataGradlePlugin.class);
     settings.getPluginManager().apply(GradleEnterprisePlugin.class);
     configureGradleEnterprise(settings.getExtensions().getByType(GradleEnterpriseExtension.class))
-
-    settings.getPluginManager().apply(CommonCustomUserDataGradlePlugin.class);
   }
 
   private void configureGradleEnterprise(GradleEnterpriseExtension gradleEnterprise) {

@@ -17,6 +17,7 @@ repositories {
 dependencies {
   implementation 'com.gradle:gradle-enterprise-gradle-plugin:3.11.3'
   implementation 'com.gradle:common-custom-user-data-gradle-plugin:1.8.2'
+  implementation 'io.invertase.gradle.settings:io.invertase.gradle.settings.gradle.plugin:1.5'
 }
 
 gradlePlugin {
