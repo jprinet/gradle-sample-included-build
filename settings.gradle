@@ -6,6 +6,7 @@ plugins {
   id "com.sample.plugins"
 }
 
-rootProject.name = 'test-project'
+rootProject.name = 'kotlin-included-build'
 include 'app'
+include 'app-kotlin'
 
